@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  /* ---------------------------------------------------- */
+  header{
+    height: 100px;
+    width: 100%;
+    background-color:  #fff;
+    display: flex;
+    justify-content: space-between;
+  }
+  .box1{
+    margin-left: 150px;
+  }
+  .box2{
+    display: flex;
+    line-height: 100px;
+    margin-right: 100px;
+    color: gray;
+  }
+  .heart, .cart{
+    margin-right: 30px;
+  }
+  .drop-down{
+    display: none;
+    position: absolute;
+    width: 160px;
+  }
+  .drop-down li{
+    list-style: none;
+    border-bottom: 1px solid white;
+  }
+  .drop-down a{
+    text-decoration: none;
+    font-size: 15px;
+    z-index: 1;
+    display: block;
+    padding: 12px 16px;
+    color: #ffffff;
+  }
+  .drop-down a:hover{
+    color: red;
+    background-color: black;
+    display: block;
+  }
+  .fa-user:hover .drop-down{
+    background-color: #18a4dd;
+    display: block;
+  }
+  /* ---------------------------------------------------- */
+  nav{
+    min-height: 50px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #e94342;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav li{
+    display: inline-block;
+    line-height: 50px;
+  }
+  nav a{
+    font-size: 15px;
+    padding: 0 30px;
+    line-height: 50px;
+    color: #ffffff;
+    display: block;
+    margin-left: -5px;
+  }
+  nav a:hover,
+  nav a.active{
+    transition: 0.5s;
+    background-color: #dd2828;
+    color: #fff;
+  }
+  nav .search-container{
+    line-height: 45px;
+    padding-right: 50px;
+  }
+  nav input{
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 5px 0 0 5px;
+  }
+  nav button{
+    width: 35px;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    background-color:#18a4dd ;
+    color: #0c0c0c;
+    margin-left: -6px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  nav .search-container button:hover {
+    background: rgb(223, 149, 13);
+    transition: 0.5s;
+  }
+  /* ---------------------------------------------------- */
+  .box-layout{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .box-1{
+    flex: 1;
+  }
+  .box-main{
+    flex: 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "content1"
+    " content2";
+  }
+  /* ---------------------------------------------------- */
+  .content1{
+    grid-area: content1;
+    width: 100%;
+  }
+  .title p{
+    font-size: 14px;
+    margin-left: 20px;
+    left: 0;
+  }
+  .title i{
+    font-size: 15px;
+    margin: 10px 0 0 20px;
+  }
+  /* ---------------------------------------------------- */
+  .content2{
+    grid-area: content2;
+  }
+  .link-small{
+    height: 40px;
+    padding: 0 20px;
+    margin-top: 10px;
+  }
+  .link-small li{
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 40px;
+  }
+  .link-small a{
+    font-size: 15px;
+    color: #292929;
+  }
+  .link-small .active{
+    color: #fbbf22;
+  }
+  h1{
+    text-align: center;
+    border: 1px solid #bbb;
+    background-color: #18a4dd;
+    height: 40px;
+    border-radius: 4px;
+    line-height: 40px;
+    color: white;
+  }
+  h1:hover{
+    color: #fbbf22;
+  }
+  .ft-contact{
+    margin: 20px 0 0 50px;
+  }
+  .ft-contact h1{
+    margin: 20px 0 20px 0;
+  }
+  .ft-contact input{
+    height: 40px;
+    width: 80%;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    font-size: 15px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #bbb;
+  }
+  .ft-contact textarea{
+    border-radius: 5px;
+    padding-left: 10px;
+    margin: 5px 0 10px 0;
+    outline: none;
+    border: 1px solid #bbb;
+    width: 80%;
+    padding: 10px 10px 0 10px;
+    font-size: 15px;
+  }
+  .ft-contact button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 5px;
+    margin: 5px 0 20px 0;
+    background-color: #ffc82e;
+  }
+  .ft-contact button:hover{
+    opacity: 0.8;
+  }
+  .title{
+    margin-bottom: 20px;
+  }
+  /* ---------------------------------------------------- */
+  .bar-product{
+    height: 45px;
+    line-height: 45px;
+    background-color: #333333;
+    color: #fbbf22;
+  }
+  .main-menu li{
+    border-top: 1px solid gray;
+    height: 40px;
+  }
+  .main-menu li a{
+    color: #0c0c0c;
+    font-size: 18px;
+  }
+  .main-menu a:hover{
+    color: #fbbf22;
+    transition: 0.1s linear;
+    display: block;
+  }
+  .main-menu li a, .bar-product i{
+    margin-left: 10px;
+    line-height: 40px;
+  }
+  .map-location{
+    text-align: center;
+  }
+  /* ---------------------------------------------------- */
+  footer{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: #292929;
+  }
+  .about{
+    margin-left: 20px;
+  }
+  .partner{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  footer li a{
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  footer li a:hover{
+    color: #fbbf22;
+  }
+  h3{
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 22px;
+  }
+  .contact .social a span{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+  .about li a,
+  .link li a{
+    font-size: 18px;
+  }
+  .fa-facebook{color: blue;}
+  .fa-instagram{color: orangered;}
+  .fa-google-plus{color: #dd1111;}
+  .fa-twitter{color: steelblue;}
+  /* ----------------------- */
+  @media (max-width:1023px){
+    nav ul{
+      display: none;
+    }
+    nav .search-container{
+      margin-left: 100px;
+    }
+    .mySlides img{
+      width: 100%;
+      height: 250px;
+    }
+    .box-layout{
+      flex-direction: column;
+    }
+    .box-1{
+      order: 2;
+    }
+    .box-2{
+      order: 3;
+    }
+    .box-main{
+      order: 1;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "content1"
+      "content2";
+    }
+    footer{
+      flex-direction: column;
+    }
+    .link, .partner, .contact{
+      margin-left: 20px;
+    }
+    .contact{
+      margin-bottom: 20px;
+    }
+    .main-menu{
+      width: 95%;
+      margin-bottom: 20px;
+    }
+    canvas{
+      display: none;
+    }
+    header .box1{
+      margin-left: 5px;
+    }
+  }

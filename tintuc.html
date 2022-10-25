@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Shoe</title>
+    <!-- <link rel="shortcut icon" href="./image/log11.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="./image/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/tintuc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <header>
+            <div class="box1">
+                <!-- <i class="fa fa-twitter" style="font-size: 100px;
+                background: linear-gradient(to bottom, #ffc82e 10%, #fff 100%);
+                background-clip: text;
+                -webkit-text-fill-color:transparent;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;"></i>
+                <canvas id="text-gr" width="300" height="80"></canvas> -->
+                <!-- <img src="img/log11.png" alt="" style="margin-top: 20px;"> -->
+                <img src="https://bizweb.dktcdn.net/100/091/132/themes/857463/assets/logo.png?1649297762433" alt="">
+            </div>
+            <!--  -->
+            <script>
+                var c = document.getElementById("text-gr");
+                var ctx = c.getContext("2d");                          
+                ctx.font = "30px Verdana";
+                // tạo gradient
+                var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+                gradient.addColorStop("0", "magenta");
+                gradient.addColorStop("0.5", "#ffc82e");
+                gradient.addColorStop("0.5", "#ffc82e");
+                // tạo gradient cho chữ
+                ctx.fillStyle = gradient;
+                ctx.fillText("Quốc Huy", 10, 75);
+            </script>
+            <div class="box2">
+                <div class="cart">
+                    <i class="fa fa-cart-plus" style="font-size:25px ;"></i>
+                </div>
+                <div class="heart">
+                    <i class="fa fa-heart" style="font-size:23px ;"></i>
+                </div>
+                <div class="login">
+                    <div class="user">
+                        <i class="fa fa-user" style="font-size:25px ;">
+                            <div class="drop-down">
+                                <li><a href="login.html">Đăng nhập</a></li>
+                                <li><a href="#">Đăng kí</a></li>
+                            </div>
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </header>
+    <nav>
+        <nav>
+            <ul>
+                <li><a href="index.html" ><i class="fa fa-home" style="font-size: 20px;">&nbsp;</i>Trang chủ</a></li>
+                <li><a href="mauxe.html">Sản phẩm</a></li>
+                <li><a href="phutung.html" >Blog</a></li>
+                <li><a href="tintuc.html"  class="active">Tin tức</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+            <div class="search-container">
+                <form action="">
+                    <input type="search" placeholder="Tìm kiếm..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </nav>
+    </nav>
+    <article>
+        <div class="link-small">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <i>|</i>
+                <li><a href="tintuc.html" class="active">Tin tức</a></li>
+            </ul>
+        </div>
+        <hr style="margin-left: 40px;">
+        <div class="box-layout">
+            <div class="box item box-1">
+                <div class="main-menu">
+                    <div class="bar-product">
+                        <i class="fa fa-bars"> Tin mới</i>
+                    </div>
+                    <ul>
+                        <div class="info">
+                            <li>
+                                <div class="inf-new">
+                                    <img src="img/Mau_xe/new1.jpg" alt="" height="40px" width="90px">
+                                    <a href="#">Ra mắt AirBlack 160</a>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="inf-new">
+                            <li>
+                                <div class="anh">
+                                    <img src="img/Mau_xe/new2.jpg" alt="" height="40px" width="90px">
+                                    <a href="#">Thay nhớt miễn phí</a>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="inf-new">
+                            <li>
+                                <div class="anh">
+                                    <img src="img/Mau_xe/new3.jpg" alt="" height="40px" width="90px">
+                                    <a href="#">Mua xe máy trúng oto</a>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="inf-new">
+                            <li>
+                                <div class="anh">
+                                    <img src="img/Mau_xe/new5.jpg" alt="" height="40px" width="90px">
+                                    <a href="#">Sửa xe miễn phí</a>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="inf-new">
+                            <li>
+                                <div class="anh">
+                                    <img src="img/Mau_xe/new4.jpg" alt="" height="40px" width="90px">
+                                    <a href="#">Hoạt động tình nguyện</a>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="poster">
+                    <img src="img/Poster/pt5.jpg" alt="" style="margin-top: 40px;">
+                </div>
+                <div class="main-menu" style="margin-top: 20px; border: none;">
+                    <iframe width="100%" height="250px" src="https://www.youtube.com/embed/BtLaTkYfkIg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="box-item box-main">
+                <h1>Tin tức</h1>
+                <div class="content-list">
+                    <div class="content-new">
+                        <h3><a href="#">Ra mắt AirBlack 160</a></h3>
+                        <div class="content">
+                            <i class="fa fa-calendar"> 20/05/2022</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="fa fa-user"> Người tham gia</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="fa fa-wechat"> Nhận xét</i>
+                        </div>
+                        <div class="product">
+                            <a href="#"><img src="img/Mau_xe/new1.jpg" alt=""></a>
+                        </div>
+                        <div class="note">
+                            <span>Honda Air Blade thế hệ mới ra mắt thị trường Việt Nam sáng 20-5. 
+                                Xe có hai lựa chọn động cơ 160 phân khối và 125 phân khối. 
+                                Trong đó, mỗi lựa chọn lại có hai phiên bản tiêu chuẩn và đặc biệt... 
+                                <a href="#">Chi tiết</a>
+                            </span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="content-new">
+                        <h3><a href="#">Thay nhớt miễn phí</a></h3>
+                        <div class="content">
+                            <i class="fa fa-calendar"> 18/05/2022</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="fa fa-user"> Người tham gia</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="fa fa-wechat"> Nhận xét</i>
+                        </div>
+                        <div class="product">
+                            <a href="#"><img src="img/Mau_xe/new2.jpg" alt=""></a>
+                        </div>
+                        <div class="note">
+                            <span>Honda Air Blade thế hệ mới ra mắt thị trường Việt Nam sáng 20-5. 
+                                Xe có hai lựa chọn động cơ 160 phân khối và 125 phân khối. 
+                                Trong đó, mỗi lựa chọn lại có hai phiên bản tiêu chuẩn và đặc biệt...
+                                <a href="#">Chi tiết</a>
+                            </span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="content-new">
+                        <h3><a href="#">Mua xe máy trúng oto</a></h3>
+                        <div class="content">
+                            <i class="fa fa-calendar"> 26/05/2022</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="fa fa-user"> Người tham gia</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <i class="fa fa-wechat"> Nhận xét</i>
+                        </div>
+                        <div class="product">
+                            <a href="#"><img src="img/Mau_xe/new3.jpg" alt=""></a>
+                        </div>
+                        <div class="note">
+                            <span>Honda Air Blade thế hệ mới ra mắt thị trường Việt Nam sáng 20-5. 
+                                Xe có hai lựa chọn động cơ 160 phân khối và 125 phân khối. 
+                                Trong đó, mỗi lựa chọn lại có hai phiên bản tiêu chuẩn và đặc biệt...
+                                <a href="#">Chi tiết</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="about">
+            <h3>Về chúng tôi</h3>
+            <li><a href="" class="fa fa-angle-right icon"> Giới thiệu chung</a></li>
+            <li><a href="" class="fa fa-angle-right"> Câu hỏi thường gặp</a></li>
+            <li><a href="" class="fa fa-angle-right"> Hướng dẫn thanh toán</a></li>
+            <li><a href="" class="fa fa-angle-right"> Tầm nhìn</a></li>
+            <li><a href="" class="fa fa-angle-right"> Góc chia sẻ</a></li>
+            <li><a href="" class="fa fa-angle-right"> Tuyển dụng</a></li>
+        </div>
+        <div class="link">
+            <h3>Liên kết nhanh</h3>
+            <li><a href="index.html" class="fa fa-angle-right"> Trang chủ</a></li>
+            <li><a href="mauxe.html" class="fa fa-angle-right"> Mẫu xe</a></li>
+            <li><a href="phutung.html" class="fa fa-angle-right"> Phụ tùng</a></li>
+            <li><a href="tintuc.html" class="fa fa-angle-right"> Tin tức</a></li>
+            <li><a href="lienhe.html" class="fa fa-angle-right"> Liên hệ</a></li>
+        </div>
+        <div class="partner">
+            <h3>Đối tác - Khách hàng</h3>
+            <div class="partner1" style="margin-top: 20px;">
+                <img src="img/Logo/logo1.jpg" alt="">
+                <img src="img/Logo/logo2.jpg" alt="">
+            </div>
+            <div class="partner2">
+                <img src="img/Logo/logo3.jpg" alt="">
+                <img src="img/Logo/logo4.jpg" alt="">
+            </div>
+            <div class="partner3">
+                <img src="img/Logo/logo5.jpg" alt="">
+                <img src="img/Logo/logo6.jpg" alt="">
+            </div>
+            <div class="partner4">
+                <img src="img/Logo/logo7.jpg" alt="">
+                <img src="img/Logo/logo8.jpg" alt="">
+            </div>
+            <div class="partner4">
+                <img src="img/Logo/logo9.jpg" alt="">
+                <img src="img/Logo/logo10.jpg" alt="">
+            </div>
+        </div>
+        <div class="contact">
+            <h3>Kết nối với chúng tôi</h3>
+            <div class="social" style="margin-top: 20px;">
+                <a href="#"><span class="fa fa-facebook"></span></a>
+                <a href="#"><span class="fa fa-instagram"></span></a>
+                <a href="#"><span class="fa fa-google-plus"></span></a>
+                <a href="#"><span class="fa fa-twitter"></span></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

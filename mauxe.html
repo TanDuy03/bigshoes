@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Shoe</title>
+    <!-- <link rel="shortcut icon" href="./image/log11.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="./image/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/mauxe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <header>
+            <div class="box1">
+                <!-- <i class="fa fa-twitter" style="font-size: 100px;
+                background: linear-gradient(to bottom, #ffc82e 10%, #fff 100%);
+                background-clip: text;
+                -webkit-text-fill-color:transparent;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;"></i>
+                <canvas id="text-gr" width="300" height="80"></canvas> -->
+                <!-- <img src="img/log11.png" alt="" style="margin-top: 20px;"> -->
+                <img src="https://bizweb.dktcdn.net/100/091/132/themes/857463/assets/logo.png?1649297762433" alt="">
+            </div>
+            <!--  -->
+            <script>
+                var c = document.getElementById("text-gr");
+                var ctx = c.getContext("2d");                          
+                ctx.font = "30px Verdana";
+                // tạo gradient
+                var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+                gradient.addColorStop("0", "magenta");
+                gradient.addColorStop("0.5", "#ffc82e");
+                gradient.addColorStop("0.5", "#ffc82e");
+                // tạo gradient cho chữ
+                ctx.fillStyle = gradient;
+                ctx.fillText("Quốc Huy", 10, 75);
+            </script>
+            <div class="box2">
+                <div class="cart">
+                    <i class="fa fa-cart-plus" style="font-size:25px ;"></i>
+                </div>
+                <div class="heart">
+                    <i class="fa fa-heart" style="font-size:23px ;"></i>
+                </div>
+                <div class="login">
+                    <div class="user">
+                        <i class="fa fa-user" style="font-size:25px ;">
+                            <div class="drop-down">
+                                <li><a href="login.html">Đăng nhập</a></li>
+                                <li><a href="#">Đăng kí</a></li>
+                            </div>
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </header>
+    <nav>
+        <nav>
+            <ul>
+                <li><a href="index.html" ><i class="fa fa-home" style="font-size: 20px;">&nbsp;</i>Trang chủ</a></li>
+                <li><a href="mauxe.html" class="active">Sản phẩm</a></li>
+                <li><a href="phutung.html">Blog</a></li>
+                <li><a href="tintuc.html">Tin tức</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+            <div class="search-container">
+                <form action="">
+                    <input type="search" placeholder="Tìm kiếm..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </nav>
+    </nav>
+    <article>
+        <div class="link-small">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <i>|</i>
+                <li><a href="mauxe.html" class="active">Mẫu xe</a></li>
+            </ul>
+        </div>
+        <hr style="margin-left: 40px;">
+        <div class="box-layout">
+            <div class="box item box-1">
+                <!-- <div class="box-item box-1">
+                    <div class="main-menu">
+                        <div class="bar-product">
+                            <i class="fa fa-bars"> Các mẫu xe</i>
+                        </div>
+                        <ul>
+                            <li><a href="#" class="fa fa-arrow-circle-o-right">&nbsp;Nguồn gốc xuất xứ</a></li>
+                            <li><a href="#" class="fa fa-arrow-circle-o-right">&nbsp;Chính sách bảo hành</a></li>
+                            <li><a href="#" class="fa fa-arrow-circle-o-right">&nbsp;Thông tin xe</a></li>
+                        </ul>
+                    </div>
+                    <div class="poster">
+                        <img src="img/Poster/pt2.jpg" alt="" style="margin-top: 40px;">
+                    </div>
+                </div> -->
+            </div>
+            <div class="box-item box-main">
+                <div style="clear: both;"></div>
+                <div class="phuoc" style="margin-top: 30px;">
+                    <h1>GIÀY NIKE</h1>
+                    <div class="new-list">
+                        <div class="new-item">
+                            <h4>Nike Jordan Point Lane</h4>
+                            <img src="img/Phutung/giay7.jpg">
+                            <div class="name">
+                                🏁 Việt Nam<br>                   
+                                <div class="price">
+                                    4,519,000 đ<br>
+                                </div> 
+                                <div class="add">
+                                    <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                    <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                    <a href="#" style="--i:3" class="fa fa-search"></a>
+                                </div>                      
+                            </div>              
+                        </div>
+                        <div class="new-item">
+                            <h4>Nike Air Zoom Pegasus</h4>
+                            <img src="img/Mau_xe/giay7.jpg">
+                            <div class="name">
+                                🏁 Việt Nam<br>                   
+                                <div class="price">
+                                    4,039,000 đ<br>
+                                </div>  
+                                <div class="add">
+                                    <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                    <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                    <a href="#" style="--i:3" class="fa fa-search"></a>
+                                </div>                   
+                            </div>              
+                        </div>
+                        <div class="new-item">
+                            <h4>Nike React Infinity</h4>
+                            <img src="img/Mau_xe/giay5.jpg">
+                            <div class="name">
+                                🏁 Việt Nam<br>                   
+                                <div class="price">
+                                    4,699,000 đ<br>
+                                </div>   
+                                <div class="add">
+                                    <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                    <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                    <a href="#" style="--i:3" class="fa fa-search"></a>
+                                </div>                    
+                            </div>              
+                        </div>
+                        <div class="new-item">
+                            <h4>Nike Air Max Zm950</h4>
+                            <img src="img/Phutung/giay14.jpg">
+                            <div class="name">
+                                🏁 Việt Nam<br>                   
+                                <div class="price">
+                                    4,223,000 đ<br>
+                                </div>  
+                                <div class="add">
+                                    <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                    <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                    <a href="#" style="--i:3" class="fa fa-search"></a>
+                                </div>                     
+                            </div>              
+                        </div>
+                        <div class="new-item">
+                            <h4>Nike Jordan Point Lane</h4>
+                            <img src="img/Phutung/giay15.jpg">
+                            <div class="name">
+                                🏁 Việt Nam<br>                   
+                                <div class="price">
+                                    4,519,000 đ<br>
+                                </div>  
+                                <div class="add">
+                                    <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                    <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                    <a href="#" style="--i:3" class="fa fa-search"></a>
+                                </div>                    
+                            </div>              
+                        </div>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="phuoc" style="margin-top: 30px;">
+                    <h1>GIÀY ADIDAS</h1>
+                    <div class="new-list">
+                        <div class="new-item">
+                            <h4>Adidas ULTRABOOST 21</h4>
+                            <img src="img/Phutung/giay9.jpg">
+                            <div class="name">
+                                🏁 Việt Nam<br>                   
+                                <div class="price">
+                                    5,000,000 đ<br>
+                                </div> 
+                                <div class="add">
+                                    <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                    <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                    <a href="#" style="--i:3" class="fa fa-search"></a>
+                                </div>                      
+                            </div>              
+                        </div>
+                        <div class="new-item">
+                            <h4> Adidas ULTRABOOST S.RDY TYO</h4>
+                            <img src="img/Phutung/giay10.jpg">
+                            <div class="name">
+                                🏁 Việt Nam<br>                   
+                                <div class="price">
+                                    4,000,000 đ<br>
+                                </div>   
+                                <div class="add">
+                                    <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                    <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                    <a href="#" style="--i:3" class="fa fa-search"></a>
+                                </div>                   
+                            </div>              
+                        </div>
+                        <div class="new-item">
+                            <h4>Adidas SOLAR GLIDE 5 M GX6705</h4>
+                            <img src="img/Phutung/giay11.jpg">
+                            <div class="name">
+                                🏁 Việt Nam<br>                   
+                                <div class="price">
+                                    3,800,000 đ<br>
+                                </div>     
+                                <div class="add">
+                                    <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                    <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                    <a href="#" style="--i:3" class="fa fa-search"></a>
+                                </div>                  
+                            </div>              
+                        </div>
+                        <div class="new-item">
+                            <h4>Adidas CLIMACOOL VENTO GY4940</h4>
+                            <img src="img/Phutung/giay12.jpg">
+                            <div class="name">
+                                🏁 Việt Nam<br>                   
+                                <div class="price">
+                                    3,040,000 đ<br>
+                                </div>  
+                                <div class="add">
+                                    <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                    <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                    <a href="#" style="--i:3" class="fa fa-search"></a>
+                                </div>                     
+                            </div>              
+                        </div>
+                        <div class="new-item">
+                            <h4>Adidas SUPERSTAR BOLD W FV3336</h4>
+                            <img src="img/Phutung/giay13.jpg">
+                            <div class="name">
+                                🏁 Việt Nam<br>                   
+                                <div class="price">
+                                    2,900,000 đ<br>
+                                </div>  
+                                <div class="add">
+                                    <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                    <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                    <a href="#" style="--i:3" class="fa fa-search"></a>
+                                </div>                    
+                            </div>              
+                        </div>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="phuoc" style="margin-top: 30px;">
+                    <h1>GIÀY PUMA</h1>
+                    <div class="new-list">
+                        <div class="new-item">
+                            <h4>Puma Xetic Halflife 195196-03</h4>
+                            <img src="img/Phutung/giay16.jpg">
+                            <div class="name">
+                                🏁 Việt Nam<br>                   
+                                <div class="price">
+                                    2,499,000 đ<br>
+                                </div> 
+                                <div class="add">
+                                    <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                    <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                    <a href="#" style="--i:3" class="fa fa-search"></a>
+                                </div>                      
+                            </div>              
+                        </div>
+                        <div class="new-item">
+                            <h4>Unisex Puma Rs-X 380462-03</h4>
+                            <img src="img/Phutung/giay17.jpg">
+                            <div class="name">
+                                🏁 Việt Nam<br>                   
+                                <div class="price">
+                                    2,309,000 đ<br>
+                                </div>   
+                                <div class="add">
+                                    <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                    <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                    <a href="#" style="--i:3" class="fa fa-search"></a>
+                                </div>                   
+                            </div>              
+                        </div>
+                        <div class="new-item">
+                            <h4>Unisex Puma Future Rider Neon Play 373383</h4>
+                            <img src="img/Phutung/giay18.jpg">
+                            <div class="name">
+                                🏁 Việt Nam<br>                   
+                                <div class="price">
+                                    1,959,000 đ<br>
+                                </div>     
+                                <div class="add">
+                                    <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                    <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                    <a href="#" style="--i:3" class="fa fa-search"></a>
+                                </div>                  
+                            </div>              
+                        </div>
+                        <div class="new-item">
+                            <h4>Lifestyle Puma Suede 374915-02</h4>
+                            <img src="img/Phutung/giay19.jpg">
+                            <div class="name">
+                                🏁 Việt Nam<br>                   
+                                <div class="price">
+                                    1,609,000 đ<br>
+                                </div>  
+                                <div class="add">
+                                    <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                    <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                    <a href="#" style="--i:3" class="fa fa-search"></a>
+                                </div>                     
+                            </div>              
+                        </div>
+                        <div class="new-item">
+                            <h4>Puma Xetic Halflife 195196-02</h4>
+                            <img src="img/Phutung/giay20.jpg">
+                            <div class="name">
+                                🏁 Việt Nam<br>                   
+                                <div class="price">
+                                    2,499,000 đ<br>
+                                </div>  
+                                <div class="add">
+                                    <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                    <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                    <a href="#" style="--i:3" class="fa fa-search"></a>
+                                </div>                    
+                            </div>              
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="content2">
+                    <div class="spnb">
+                        <h1>XE CŨ</h1>
+                        <div class="new-list">
+                            <div class="new-item">
+                                <h4>AirBlack</h4>
+                                <img src="img/Mau_xe/mau1.jpg">
+                                <div class="name">
+                                    🏁 Việt Nam<br>                   
+                                    <div class="price">
+                                        46,000,000 đ<br>
+                                    </div>                      
+                                </div>  
+                                <div class="add">
+                                    <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                    <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                    <a href="#" style="--i:3" class="fa fa-search"></a>
+                                </div>        
+                            </div>
+                            <div class="new-item">
+                                <h4>Vario</h4>
+                                <img src="img/Mau_xe/mau2.jpg">
+                                <div class="name">
+                                    🏁 Việt Nam<br>                   
+                                    <div class="price">
+                                        57,000,000 đ<br>
+                                    </div>                     
+                                </div>  
+                                <div class="add">
+                                    <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                    <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                    <a href="#" style="--i:3" class="fa fa-search"></a>
+                                </div>          
+                            </div>
+                            <div class="new-item">
+                                <h4>WinerX</h4>
+                                <img src="img/Mau_xe/mau11.jpg">
+                                <div class="name">
+                                    🏁 Việt Nam<br>                   
+                                    <div class="price">
+                                        48,000,000 đ<br>
+                                    </div>   
+                                    <div class="add">
+                                        <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                        <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                        <a href="#" style="--i:3" class="fa fa-search"></a>
+                                    </div>                    
+                                </div>              
+                            </div>
+                            <div class="new-item">
+                                <h4>Wave Fi</h4>
+                                <img src="img/Mau_xe/mau3.jpg">
+                                <div class="name">
+                                    🏁 Việt Nam<br>                   
+                                    <div class="price">
+                                        26,000,000 đ<br>
+                                    </div>    
+                                    <div class="add">
+                                        <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                        <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                        <a href="#" style="--i:3" class="fa fa-search"></a>
+                                    </div>                   
+                                </div>              
+                            </div>
+                            <div class="new-item">
+                                <h4>Exciter 155</h4>
+                                <img src="img/Mau_xe/mau4.jpg">
+                                <div class="name">
+                                    🏁 Việt Nam<br>                   
+                                    <div class="price">
+                                        48,000,000 đ<br>
+                                    </div>  
+                                    <div class="add">
+                                        <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                        <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                        <a href="#" style="--i:3" class="fa fa-search"></a>
+                                    </div>                     
+                                </div>              
+                            </div>
+                            <div class="new-item">
+                                <h4>SuperCub</h4>
+                                <img src="img/Mau_xe/mau5.jpg">
+                                <div class="name">
+                                    🏁 Việt Nam<br>                   
+                                    <div class="price">
+                                        76,000,000 đ<br>
+                                    </div>   
+                                    <div class="add">
+                                        <a href="#" style="--i:1" class="fa fa-cart-plus"></a>
+                                        <a href="#" style="--i:2" class="fa fa-heart"></a>
+                                        <a href="#" style="--i:3" class="fa fa-search"></a>
+                                    </div>                    
+                                </div>              
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="box item box-2">
+                <!-- <div class="poster">
+                    <img src="img/Poster/pt3.jpg" alt="" height="400px">
+                </div>
+                <div class="main-menu">
+                    <div class="bar-product">
+                        <i class="fa fa-bars"> Mua xe ngay</i>
+                    </div>
+                    <ul>
+                        <li><a href="#" class="fa fa-arrow-circle-o-right">&nbsp;Xe hãng Suzuki</a></li>
+                        <li><a href="#" class="fa fa-arrow-circle-o-right">&nbsp;Xe hãng Yamaha</a></li>
+                        <li><a href="#" class="fa fa-arrow-circle-o-right">&nbsp;Xe hãng Honda</a></li>
+                    </ul>
+                </div>
+                <div class="main-menu" style="margin-top: 40px;">
+                    <div class="bar-product">
+                        <i class="fa fa-bars"> Tư vấn trực tuyến</i>
+                    </div>
+                    <ul>
+                        <li><a href="" class="fa fa-facebook" style="color:blue ;"></a><a href="#">&nbsp;&nbsp;Facebook</a></li>
+                        <li><a href="" class="fa fa-instagram" style="color:orangered ;"></a><a href="#">&nbsp;&nbsp;Instagram</a></li>
+                        <li><a href=""  class="fa fa-wechat" style="color:green ;"></a><a href="#">&nbsp;Wechat</a></li>
+                        <li><a href="" class="fa fa-google-plus" style="color:red ;"></a><a href="#">&nbsp;&nbsp;Google</a></li>
+                        <li><a href="" class="fa fa-yahoo" style="color:purple ;"></a><a href="#">&nbsp;&nbsp;Yahoo</a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="about">
+            <h3>Về chúng tôi</h3>
+            <li><a href="" class="fa fa-angle-right icon"> Giới thiệu chung</a></li>
+            <li><a href="" class="fa fa-angle-right"> Câu hỏi thường gặp</a></li>
+            <li><a href="" class="fa fa-angle-right"> Hướng dẫn thanh toán</a></li>
+            <li><a href="" class="fa fa-angle-right"> Tầm nhìn</a></li>
+            <li><a href="" class="fa fa-angle-right"> Góc chia sẻ</a></li>
+            <li><a href="" class="fa fa-angle-right"> Tuyển dụng</a></li>
+        </div>
+        <div class="link">
+            <h3>Liên kết nhanh</h3>
+            <li><a href="index.html" class="fa fa-angle-right"> Trang chủ</a></li>
+            <li><a href="mauxe.html" class="fa fa-angle-right"> Mẫu xe</a></li>
+            <li><a href="phutung.html" class="fa fa-angle-right"> Phụ tùng</a></li>
+            <li><a href="tintuc.html" class="fa fa-angle-right"> Tin tức</a></li>
+            <li><a href="lienhe.html" class="fa fa-angle-right"> Liên hệ</a></li>
+        </div>
+        <div class="partner">
+            <h3>Đối tác - Khách hàng</h3>
+            <div class="partner1" style="margin-top: 20px;">
+                <img src="img/Logo/logo1.jpg" alt="">
+                <img src="img/Logo/logo2.jpg" alt="">
+            </div>
+            <div class="partner2">
+                <img src="img/Logo/logo3.jpg" alt="">
+                <img src="img/Logo/logo4.jpg" alt="">
+            </div>
+            <div class="partner3">
+                <img src="img/Logo/logo5.jpg" alt="">
+                <img src="img/Logo/logo6.jpg" alt="">
+            </div>
+            <div class="partner4">
+                <img src="img/Logo/logo7.jpg" alt="">
+                <img src="img/Logo/logo8.jpg" alt="">
+            </div>
+            <div class="partner4">
+                <img src="img/Logo/logo9.jpg" alt="">
+                <img src="img/Logo/logo10.jpg" alt="">
+            </div>
+        </div>
+        <div class="contact">
+            <h3>Kết nối với chúng tôi</h3>
+            <div class="social" style="margin-top: 20px;">
+                <a href="#"><span class="fa fa-facebook"></span></a>
+                <a href="#"><span class="fa fa-instagram"></span></a>
+                <a href="#"><span class="fa fa-google-plus"></span></a>
+                <a href="#"><span class="fa fa-twitter"></span></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

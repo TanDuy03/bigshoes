@@ -1,0 +1,610 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+/* ---------------------------------------------------- */
+header{
+  height: 100px;
+  width: 100%;
+  background-color:  #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.box1{
+  margin-left: 150px;
+}
+.box2{
+  display: flex;
+  line-height: 100px;
+  margin-right: 100px;
+  color: gray;
+}
+.heart, .cart{
+  margin-right: 30px;
+}
+.drop-down{
+  display: none;
+  position: absolute;
+  width: 160px;
+}
+.drop-down li{
+  list-style: none;
+  border-bottom: 1px solid white;
+}
+.drop-down a{
+  text-decoration: none;
+  font-size: 15px;
+  z-index: 1;
+  display: block;
+  padding: 12px 16px;
+  color: #ffffff;
+}
+.drop-down a:hover{
+  color: red;
+  background-color: black;
+  display: block;
+}
+.fa-user:hover .drop-down{
+  background-color: #18a4dd;
+  display: block;
+}
+/* ---------------------------------------------------- */
+nav{
+  min-height: 50px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #e94342;   /*ffc82e*/
+  display: flex;
+  justify-content: space-between;
+}
+nav ul{
+  margin-right: auto;
+}
+nav li{
+  display: inline-block;
+  line-height: 50px;
+}
+nav a{
+  font-size: 15px;
+  padding: 0 30px;
+  line-height: 50px;
+  color: #ffffff;
+  display: block;
+  margin-left: -5px;
+}
+nav a:hover,
+nav a.active{
+  transition: 0.5s;
+  background-color: #dd2828;
+  color: #fff;
+}
+nav .search-container{
+  line-height: 45px;
+  padding-right: 50px;
+}
+nav input{
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  width: 250px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 5px 0 0 5px;
+}
+nav button{
+  width: 35px;
+  height: 30px;
+  font-size: 15px;
+  border: none;
+  background-color:#18a4dd ;
+  color: #0c0c0c;
+  margin-left: -6px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+nav .search-container button:hover {
+  background: rgb(223, 149, 13);
+  transition: 0.5s;
+}
+/* ---------------------------------------------------- */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.mySlides img{
+  width: 100%;
+  height: 400px;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.nutt{
+  margin-top: -35px;
+  position: relative;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.active {
+  background-color: red;
+}
+/* ---------------------------------------------------- */
+.box-layout{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 40px;
+}
+/* ---------------------------------------------------- */
+.box-1{
+  flex: 1;
+}
+.main-menu, .poster img{
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid gray;
+  width: 260px;
+}
+.bar-product{
+  height: 45px;
+  line-height: 45px;
+  background-color: #333333;
+  color: #fbbf22;
+}
+.main-menu li{
+  border-top: 1px solid gray;
+  height: 40px;
+}
+.main-menu li a{
+  color: #0c0c0c;
+  font-size: 18px;
+}
+.main-menu a:hover{
+  color: #fbbf22;
+  transition: 0.1s linear;
+  display: block;
+}
+.main-menu li a, .bar-product i{
+  margin-left: 10px;
+  line-height: 40px;
+}
+/* ---------------------------------------------------- */
+.box-2{
+  flex: 1;
+}
+/* ---------------------------------------------------- */
+.box-main{
+  flex: 3;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "content1"
+  "content2";
+  margin-top: -60px;
+}
+.content1{
+  grid-area: content1;
+  margin-top: 30px;
+}
+.content2{
+  grid-area: content2;
+  margin-bottom: 30px;
+}
+.spnb, .sp1, .ptung, .oil-tire h1{
+  margin-top: 30px;
+}
+h1{
+  text-align: center;
+  border: 1px solid #bbb;
+  background-color: #18a4dd;
+  height: 40px;
+  border-radius: 4px;
+  line-height: 40px;
+  color: white;
+}
+h1:hover{
+  color: #fbbf22;
+}
+.name, h4{
+  color: black;
+  font-size: 14px;
+  margin: 10px 0 10px 5px;
+}
+.new-item h4{
+  text-align: center;
+}
+.new-list{
+  margin-left: -10px;
+}
+.new-item{
+  float: left;
+  width: calc(25% - 10px);
+  margin: auto;
+  border: 1px solid #bbb;
+  margin-left: 10px;
+  margin-top: 30px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+.new-item img{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 200px;
+}
+.new-item .name{
+  margin-left: 10px;
+  font-size: 16px;
+}
+.price{
+  font-size: 15px;
+  color: #dd1111;
+}
+.hightlight{
+  font-size: 14px;
+  color: #333333;
+  text-decoration: line-through;
+}
+.bn-sale img{
+  width: 100%;
+  margin-top: 30px;
+  height: 250px;
+}
+.new-item .add{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: none;
+  height: 90%;
+  transform: scale(0);
+}
+.new-item .add a{
+  color: #ffffff;
+  background-color: #ffc82e;
+  margin: 3px;
+  padding: 13px 15px;
+  transform: translateY(-200px);
+  transition-property: transform;
+  transition-delay: calc(.1s * var(--i));
+}
+.new-item:hover .add a{
+  transform: translateY(0px);
+}
+.new-item:hover .add{
+  transform: scale(1);
+}
+.new-item:hover img{
+  opacity: 50%;
+}
+/* ---------------------------------------------------- */
+.as-container{
+  display: flex;
+  justify-content: space-between;
+}
+.as-box1{
+  flex: 1;
+  background-color: #fbbf22;
+}
+.as-box2{
+  flex: 1;
+  background-color: aqua;
+}
+.as-boxmain{
+  flex: 2;
+  margin-bottom: 20px;
+}
+.as-boxmain h2{
+  margin: 10px 0 5px 15px;
+}
+.as-new h5, .as-new i{
+  font-size: 15px;
+  margin-left: 20px;
+  padding-top: 10px;
+}
+.as-content{
+  text-align: left;
+}
+.as-content span{
+  font-size: 12px;
+}
+.as-link a{
+  font-size: 14px;
+  text-decoration: underline;
+  font-style: italic;
+  float: right;
+  padding-right: 10px;
+  color: #333333;
+}
+.as-link a:hover{
+  color: #dd1111;
+}
+.as-new{
+  width: 30%;
+  border: 1px solid #bbb;
+  margin-left: 2.5%;
+  float: left;
+  margin-top: 20px;
+  border-radius: 5px;
+  height: 400px;
+  text-align: center;
+}
+.as-new img{
+  width: 90%;
+  height: 250px;
+  margin-top: 10px;
+}
+/* ---------------------------------------------------- */
+footer{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  background-color: #292929;
+}
+.about{
+  margin-left: 20px;
+}
+.partner{
+  display: flex;
+  flex-direction: column;
+}
+.contact{
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+footer li a{
+  color: #ffffff;
+  margin-top: 20px;
+}
+footer li a:hover{
+  color: #fbbf22;
+}
+h3{
+  color: #ffffff;
+  margin-top: 20px;
+  font-size: 22px;
+}
+.contact .social a span{
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 25px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.about li a,
+.link li a{
+  font-size: 18px;
+}
+.fa-facebook{color: blue;}
+.fa-instagram{color: orangered;}
+.fa-google-plus{color: #dd1111;}
+.fa-twitter{color: steelblue;}
+/*  */
+.topnav .icon {
+  display: none;
+}
+/*  */
+label #btn,
+label #cancel{
+  color: white;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check, #btn, #cancel{
+  display: none;
+}
+/*  */
+/* ---------------------------------------------------- */
+@media (max-width:800px){
+  main{
+    display: block;
+  }
+  .mySlides img{
+    width: 100%;
+    height: 250px;
+  }
+  .box-layout{
+    flex-direction: column;
+    z-index: 1;
+  }
+  .box-1{
+    order: 2;
+  }
+  .box-2{
+    order: 3;
+  }
+  .box-main{
+    order: 1;
+  }
+  .new-item{
+    width: calc(50% - 15px);
+    margin-left: 15px;
+  }
+  .main-menu{
+    width: 95%;
+  }
+  .poster img{
+    width: 95%;
+  }
+  .as-new{
+    width: 95%;
+  }
+  /*  */
+  footer{
+    flex-direction: column;
+  }
+  .link, .partner, .contact{
+    margin-left: 20px;
+  }
+  .contact{
+    margin-bottom: 20px;
+  }
+  /*  */
+  label #btn{
+    display: block;
+  }
+    #check:checked ~ ul{
+    left: 0;
+  }
+  #check:checked ~ label #btn{
+    display: none;
+  }
+  #check:checked ~ label #cancel{
+    display: block;
+  }
+  #btn,#cancel{
+    margin-left: 20px;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: brown;
+    top: 86px;
+    left: -100%;
+    text-align: left;
+    transition: all .5s;
+    z-index:  2;
+  }
+  nav ul li{
+    display: block;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .search-container{
+    margin-top: 15px;
+  }
+  header .box1{
+    margin-left: 5px;
+  }
+  canvas{
+    display: none;
+  }
+}
+/* -------------------------- */
+@media (max-width:1023px){
+  main{
+    display: block;
+  }
+  .mySlides img{
+    width: 100%;
+    height: 250px;
+  }
+  .box-layout{
+    flex-direction: column;
+    z-index: 1;
+  }
+  .box-1{
+    order: 2;
+  }
+  .box-2{
+    order: 3;
+  }
+  .box-main{
+    order: 1;
+    margin-left: 90px;
+  }
+  .new-item{
+    width: calc(30% - 15px);
+    margin-left: 15px;
+  }
+  .main-menu{
+    width: 95%;
+    margin-top: 30px;
+  }
+  .poster img{
+    display: none;
+  }
+  .as-new{
+    width: 95%;
+  }
+  /*  */
+  footer{
+    flex-direction: column;
+  }
+  .link, .partner, .contact{
+    margin-left: 20px;
+  }
+  .contact{
+    margin-bottom: 20px;
+  }
+  /*  */
+  label #btn{
+    display: block;
+  }
+    #check:checked ~ ul{
+    left: 0;
+  }
+  #check:checked ~ label #btn{
+    display: none;
+  }
+  #check:checked ~ label #cancel{
+    display: block;
+  }
+  #btn,#cancel{
+    margin-left: 20px;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: brown;
+    top: 86px;
+    left: -100%;
+    text-align: left;
+    transition: all .5s;
+    z-index:  2;
+  }
+  nav ul li{
+    display: block;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .search-container{
+    margin-top: 15px;
+  }
+  header .box1{
+    margin-left: 5px;
+  }
+  canvas{
+    display: none;
+  }
+}

@@ -1,0 +1,374 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+/* ---------------------------------------------------- */
+header{
+  height: 100px;
+  width: 100%;
+  background-color:  #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.box1{
+  margin-left: 150px;
+}
+.box2{
+  display: flex;
+  line-height: 100px;
+  margin-right: 100px;
+  color: gray;
+}
+.heart, .cart{
+  margin-right: 30px;
+}
+.drop-down{
+  display: none;
+  position: absolute;
+  width: 160px;
+}
+.drop-down li{
+  list-style: none;
+  border-bottom: 1px solid white;
+}
+.drop-down a{
+  text-decoration: none;
+  font-size: 15px;
+  z-index: 1;
+  display: block;
+  padding: 12px 16px;
+  color: #ffffff;
+}
+.drop-down a:hover{
+  color: red;
+  background-color: black;
+  display: block;
+}
+.fa-user:hover .drop-down{
+  background-color: #18a4dd;
+  display: block;
+}
+/* ---------------------------------------------------- */
+nav{
+  min-height: 50px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #e94342;
+  display: flex;
+  justify-content: space-between;
+}
+nav li{
+  display: inline-block;
+  line-height: 50px;
+}
+nav a{
+  font-size: 15px;
+  padding: 0 30px;
+  line-height: 50px;
+  color: #ffffff;
+  display: block;
+  margin-left: -5px;
+}
+nav a:hover,
+nav a.active{
+  transition: 0.5s;
+  background-color: #dd2828;
+  color: #fff;
+}
+nav .search-container{
+  line-height: 45px;
+  padding-right: 50px;
+}
+nav input{
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  width: 250px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 5px 0 0 5px;
+}
+nav button{
+  width: 35px;
+  height: 30px;
+  font-size: 15px;
+  border: none;
+  background-color:#18a4dd ;
+  color: #0c0c0c;
+  margin-left: -6px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+nav .search-container button:hover {
+  background: rgb(223, 149, 13);
+  transition: 0.5s;
+}
+/* ---------------------------------------------------- */
+.box-layout{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 40px;
+}
+/* ---------------------------------------------------- */
+.box-1{
+  flex: 1;
+}
+.link-small{
+  height: 40px;
+  padding: 0 20px;
+  margin-top: 10px;
+}
+.link-small li{
+  display: inline-block;
+  padding: 0 20px;
+  line-height: 40px;
+}
+.link-small a{
+  font-size: 15px;
+  color: #292929;
+}
+.link-small .active{
+  color: #fbbf22;
+}
+.main-menu, .poster img{
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid gray;
+  width: 260px;
+}
+.bar-product{
+  height: 45px;
+  line-height: 45px;
+  background-color: #333333;
+  color: #fbbf22;
+}
+.main-menu li{
+  border-top: 1px solid gray;
+  height: 40px;
+}
+.main-menu li a{
+  color: #0c0c0c;
+  font-size: 18px;
+}
+.main-menu a:hover{
+  color: #fbbf22;
+  transition: 0.1s linear;
+  display: block;
+}
+.main-menu li a, .bar-product i{
+  margin-left: 10px;
+  line-height: 40px;
+}
+/* ---------------------------------------------------- */
+.box-2{
+  flex: 1;
+}
+.main-menu a:hover{
+  transition: linear 0.2s;
+}
+/* ---------------------------------------------------- */
+.box-main{
+  flex: 4;
+  margin-bottom: 30px;
+}
+.slider{
+  margin-bottom: 20px;
+}
+h1{
+  text-align: center;
+  border: 1px solid #bbb;
+  background-color: #18a4dd;
+  height: 40px;
+  border-radius: 4px;
+  line-height: 40px;
+  color: white;
+  margin-top: 10px;
+}
+h1:hover{
+  color: #fbbf22;
+}
+.name, h4{
+  color: black;
+  font-size: 14px;
+  margin: 10px 0 10px 5px;
+}
+.new-item h4{
+  text-align: center;
+}
+.new-list{
+  margin-left: -10px;
+}
+.new-item{
+  float: left;
+  width: calc(20% - 10px);
+  margin: auto;
+  border: 1px solid #bbb;
+  margin-left: 10px;
+  margin-top: 30px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+}
+.new-item img{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 200px;
+}
+.new-item .name{
+  margin-left: 10px;
+  font-size: 16px;
+}
+.price{
+  font-size: 15px;
+  color: #dd1111;
+}
+.hightlight{
+  font-size: 14px;
+  color: #333333;
+  text-decoration: line-through;
+}
+.bn-sale img{
+  width: 100%;
+  margin-top: 30px;
+  height: 250px;
+}
+.new-item .add{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: none;
+  height: 90%;
+  transform: scale(0);
+}
+.new-item .add a{
+  color: #ffffff;
+  background-color: #ffc82e;
+  margin: 3px;
+  padding: 13px 15px;
+  transform: translateY(-200px);
+  transition-property: transform;
+  transition-delay: calc(.1s * var(--i));
+}
+.new-item:hover .add a{
+  transform: translateY(0px);
+}
+.new-item:hover .add{
+  transform: scale(1);
+}
+.new-item:hover img{
+  opacity: 50%;
+}
+.oil-tire{
+  margin-top: 30px;
+}
+/* ---------------------------------------------------- */
+footer{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  background-color: #292929;
+}
+.about{
+  margin-left: 20px;
+}
+.partner{
+  display: flex;
+  flex-direction: column;
+}
+.contact{
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+footer li a{
+  color: #ffffff;
+  margin-top: 20px;
+}
+footer li a:hover{
+  color: #fbbf22;
+}
+h3{
+  color: #ffffff;
+  margin-top: 20px;
+  font-size: 22px;
+}
+.contact .social a span{
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 25px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.about li a,
+.link li a{
+  font-size: 18px;
+}
+.fa-facebook{color: blue;}
+.fa-instagram{color: orangered;}
+.fa-google-plus{color: #dd1111;}
+.fa-twitter{color: steelblue;}
+/* ----------------------- */
+@media (max-width:1023px){
+  nav ul{
+    display: none;
+  }
+  nav .search-container{
+    margin-left: 100px;
+  }
+  .mySlides img{
+    width: 100%;
+    height: 250px;
+  }
+  .box-layout{
+    flex-direction: column;
+  }
+  .box-1{
+    order: 2;
+  }
+  .box-2{
+    order: 3;
+  }
+  .box-main{
+    order: 1;
+  }
+  /*  */
+  footer{
+    flex-direction: column;
+  }
+  .link, .partner, .contact{
+    margin-left: 20px;
+  }
+  .contact{
+    margin-bottom: 20px;
+  }
+  .main-menu{
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  .poster img{
+    display: none;
+  }
+  hr{margin-right: 40px;}
+  canvas{
+    display: none;
+  }
+  header .box1{
+    margin-left: 5px;
+  }
+}
